@@ -1,0 +1,59 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.dark-mode body {
+  background-color: #141414;
+  color: #fff;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-modal .ant-modal-content {
+  border-radius: 12px;
+}
+
+.ant-btn {
+  border-radius: 6px;
+}
+
+.ant-select, .ant-input, .ant-picker {
+  border-radius: 6px !important;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.ant-tag {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.ant-table {
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}
