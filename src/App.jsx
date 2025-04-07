@@ -184,17 +184,10 @@ const App = () => {
         <Space direction="vertical" style={{ width: "100%" }}>
           <h2>🗂️ Task Management Dashboard</h2>
           <Space wrap>
-            <Button
-              type="primary"
-              icon={<PlusOutlined />}
-              onClick={() => {
-                setEditingTask(null);
-                form.resetFields();
-                setIsModalOpen(true);
-              }}
-            >
-              Add Task
-            </Button>
+          <span>
+              Dark Mode <Switch checked={isDark} onChange={setIsDark} />
+            </span>
+            
             <Select
               value={filterStatus}
               onChange={setFilterStatus}
@@ -210,9 +203,19 @@ const App = () => {
               allowClear
               style={{ width: 200 }}
             />
-            <span>
-              Dark Mode <Switch checked={isDark} onChange={setIsDark} />
-            </span>
+
+            <Button
+              type="primary" 
+              icon={<PlusOutlined />}
+              onClick={() => {
+                setEditingTask(null);
+                form.resetFields();
+                setIsModalOpen(true);
+              }}
+            >
+              Add Task
+            </Button>
+           
           </Space>
 
           <Table
